@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <LinearLayout
+        android:id="@+id/advisorDetailView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <VideoView
+                android:id="@+id/videoView_adetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/notifyMe_adetail"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/notifyme_background"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="Notify me when LIVE"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/credit_adetail"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/credit_background"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="2.00 Credits/min"
+                android:textColor="@android:color/white" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/advisor_profile_image"
+                android:layout_width="@dimen/advisorDetail_profileImage_width"
+                android:layout_height="@dimen/advisorDetail_profileImage_Height"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/download" />
+
+            <TextView
+                android:id="@+id/advisor_name_adetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="35dp"
+                android:layout_marginLeft="85dp"
+                android:text="Anamika"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/advisorDetail_cardView_Height"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/chatWithMe_adetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#b7157be1"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="CHAT WITH ME LIVE"
+                    android:textColor="@android:color/white" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/TxtMeAQuestion_adetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f6e79b03"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="TXT ME A QUESTION"
+                    android:textColor="@android:color/white" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:background="#1b44f7" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/about_me_adetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/totalReviews_adetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="REVIEWS(394)"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="#f75a03e7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#1b44f7" />
+
+                <ListView
+                    android:id="@+id/listView_adetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="5dp"
+                    android:nestedScrollingEnabled="true" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

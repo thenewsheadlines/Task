@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <im.bcs.task.Camera2api.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/cameraChange"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_change_black_24dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/blacktransparent">
+
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/camera_capture"
+            android:foreground="@drawable/custom_ripple" />
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/ic_videocam_black_24dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

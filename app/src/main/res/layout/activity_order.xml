@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="im.bcs.task.Order">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/advisor_profile_image_order"
+                android:layout_width="@dimen/advisorDetail_profileImage_width"
+                android:layout_height="@dimen/advisorDetail_profileImage_Height"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/download" />
+
+            <TextView
+                android:id="@+id/advisor_name_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manish Kr Arora"
+                android:fontFamily="@font/lily_script_one"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/advisor_profile_image_order"/>
+
+            <TextView
+                android:id="@+id/advisor_description_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manish Kr Arora"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/advisor_name_order"
+                android:layout_toRightOf="@+id/advisor_profile_image_order"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/advisor_description_order"
+            android:background="#1b44f7" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADVISOR INSTRUCTIONS"
+            android:textColor="#f6e79b03"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/advisor_profile_image_order"/>
+
+        <TextView
+            android:id="@+id/advisor_instruction_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I would request to my client to provide me with accurate"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SPECIFIC QUESTION"
+            android:textColor="#f6e79b03"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"/>
+
+        <EditText
+            android:id="@+id/specific_question_order"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Please ask specific question here"
+            android:textSize="18dp"
+            android:gravity="left|center"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/specific_question_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SITUATION"
+            android:textColor="#f6e79b03"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"/>
+
+        <EditText
+            android:id="@+id/situtation_order"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|top"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/specific_question_background"/>
+
+        <ImageButton
+            android:id="@+id/media_order"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_play_circle_filled_black_24dp" />
+
+        <TextView
+            android:id="@+id/addPhotoVideo_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Photo/Video"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"/>
+
+        <include layout="@layout/image_video_layout"/>
+
+        <TextView
+            android:id="@+id/submit_order"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/submit_background"
+            android:text="SUBMIT"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/question_icon_FAQ"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/question_icon_back" />
+
+        <TextView
+            android:id="@+id/question_FAQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/question_icon_FAQ"
+            android:gravity="start|center"
+            android:text="Question"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/answer_icon_FAQ"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/answer_icon_back" />
+
+        <TextView
+            android:id="@+id/answer_FAQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/answer_icon_FAQ"
+            android:gravity="start|center"
+            android:text="Answer"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+    </RelativeLayout>
+
+</LinearLayout>

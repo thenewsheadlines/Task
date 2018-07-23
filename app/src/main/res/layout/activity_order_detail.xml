@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="im.bcs.task.OrderDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/advisor_profile_image_orderDetail"
+            android:layout_width="@dimen/advisorDetail_profileImage_width"
+            android:layout_height="@dimen/advisorDetail_profileImage_Height"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/download" />
+
+        <TextView
+            android:id="@+id/advisor_name_orderDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manish Kr Arora"
+            android:fontFamily="@font/lily_script_one"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/advisor_profile_image_orderDetail"/>
+
+        <TextView
+            android:id="@+id/advisor_description_orderDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manish Kr Arora"
+            android:textSize="18dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/advisor_name_orderDetail"
+            android:layout_toRightOf="@+id/advisor_profile_image_orderDetail"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#1b44f7" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PLEASE SELECT YOUR LEVEL OF DETAIL"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Astrology Advisor offers 3 different levels of detail to best suit your reading needs please select using the segments below."
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textReading_orderDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/textviewclicked_orderdetail"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="TEXT \n READING"
+            android:layout_weight="1"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/enhancedVideo_orderDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/textviewclicked_orderdetail"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="ENHANCED \n VIDEO"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/premiumReading_orderDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/textviewclicked_orderdetail"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:layout_marginLeft="1dp"
+            android:text="PREMIUM \n READING"
+            android:layout_weight="1"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="200 Credits"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have Selected a Text Reading costing 200 Credits"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/submit_orderDetail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/submit_background"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#1b44f7" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FREQUENTLY ASKED QUESTONS"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ListView
+        android:id="@+id/listView_orderDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>

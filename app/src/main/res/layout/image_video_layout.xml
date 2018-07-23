@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:id="@+id/imageVideo_ParentLayout"
+    android:layout_height="400dp"
+    android:visibility="gone">
+
+    <Button
+        android:id="@+id/close_imageVideo_order"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/close_button_order"/>
+
+    <ImageView
+        android:id="@+id/imageView_imageVideo_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/close_imageVideo_order"
+        android:visibility="gone"/>
+
+    <VideoView
+        android:id="@+id/videoView_imageVideo_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/close_imageVideo_order"
+        android:visibility="gone"/>
+
+</RelativeLayout>

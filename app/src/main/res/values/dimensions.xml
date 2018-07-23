@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ItemView_cardView_height">150dp</dimen>
+
+    <dimen name="advisorDetail_profileImage_width">60dp</dimen>
+    <dimen name="advisorDetail_profileImage_Height">60dp</dimen>
+    <dimen name="advisorDetail_cardView_Height">50dp</dimen>
+</resources>

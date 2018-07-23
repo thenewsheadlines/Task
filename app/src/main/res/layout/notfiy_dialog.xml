@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/cancel_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/text"
+        android:background="@drawable/notify_cancel_background"
+        android:text="CANCEL"
+        android:textColor="#fdeef5ee" />
+
+    <TextView
+        android:id="@+id/title_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel_dialog"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Notify Me When Advisor is Available for Live Chat"
+        android:textColor="@android:color/white"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/notifyEveryTime_dialog"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/title_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/notselectedbut_dialog_background"
+        android:text="Notify every time"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/nextTimeOnly_dialog"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/notifyEveryTime_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/notselectedbut_dialog_background"
+        android:text="Next time only"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/never_dialog"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/nextTimeOnly_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/notselectedbut_dialog_background"
+        android:text="Never"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/save_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/never_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/save_dailog_background"
+        android:text="save"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
